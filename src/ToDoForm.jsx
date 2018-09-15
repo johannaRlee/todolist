@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./App.css";
 
 export default class ToDoForm extends Component {
     constructor(props) {
@@ -24,7 +25,8 @@ export default class ToDoForm extends Component {
         return (
           <div>
             <input type="text" value={this.state.value} onChange={this.handleChange} />
-            <button className="btn btn-primary" onClick={this.addTodo}>ok</button>
+            <button className="xsmall btn btn-secondary btn-sm" onClick={this.addTodo}>Add</button>
+           
           </div>
         );
       }

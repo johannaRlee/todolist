@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './App.css';
 
 export default class ToDoListItem extends Component{
     constructor(props) {
@@ -13,8 +14,8 @@ export default class ToDoListItem extends Component{
     }
     render() {
         return (
-            <div className="todoWrapper">
-                <span>{this.state.id} <p>{this.state.text}</p></span>
+            <div className="todoitem">
+                <span>{this.state.text}</span>
             </div>
         );
     }

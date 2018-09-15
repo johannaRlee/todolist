@@ -1,14 +1,18 @@
 
 body {
+	background: #f5f5f5 !important;
+}
+
+.bg-jk {
 	font: 12px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	line-height: 1.5em;
-	background: #f5f5f5;
+	/* line-height: 1.5em; */
+	/* background: #f5f5f5; */
 	color: #946e6e;
-	min-width: 230px;
-	max-width: 550px;
-	margin: 0 auto;
+	/* min-width: 230px;
+	max-width: 550px; */
+	/* margin: 0 auto; */
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	/* -moz-osx-font-smoothing: grayscale; */
   font-weight: 300;
 }
 
@@ -30,4 +34,29 @@ body {
   padding: 5px;
   background: white;
   box-shadow: 1px 1px .5px 1px rgba(36, 36, 39, 0.2);;
+}
+
+.todoitem {
+  border: .75px, 0.2 solid gainsboro;
+  font: 10px Helvetica;
+  color: black;
+  border-bottom: 1px solid #efefef;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+ul {
+  -webkit-padding-start: 0px;
+}
+
+
+li {
+  margin-top: 1em;
+  border-bottom: 2px;
+}
+
+xsmall,
+.xsmall {
+  font-size: 50% !important;
+  font-weight: 400;
 }
