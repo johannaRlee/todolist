@@ -22,11 +22,15 @@ export default class ToDoForm extends Component {
       }
     
       render() {
+      
         return (
-          <div>
-            <input type="text" value={this.state.value} onChange={this.handleChange} />
-            <button className="xsmall btn btn-secondary btn-sm" onClick={this.addTodo}>Add</button>
-           
+          <div class="row">
+          <div class="col-md-12">
+          <div class="inputline">   
+            <input type="text" class="col-md-8 inputtype" value={this.state.value} onChange={this.handleChange} />
+            <button className="btn btn-sm col-md-3 btn-lg btn-outline-secondary" onClick={this.addTodo}>Add</button>
+          </div> 
+          </div>
           </div>
         );
       }

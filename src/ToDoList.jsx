@@ -20,6 +20,7 @@ export default class ToDoList extends Component {
     };
 
     this.addTodo = this.addTodo.bind(this);
+    this.removeTodo = this.removeTodo.bind(this);
   }
 
   addTodo(todoText) {
@@ -33,6 +34,12 @@ export default class ToDoList extends Component {
       nextId: this.state.nextId + 1
     });
   }
+
+  removeTodo(id) {
+    this.setState({
+        todos: this.state.todos.filter((todo, index) => todo.id !== id)
+      });
+}
 
   render() {
     return (
